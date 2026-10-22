@@ -1,14 +1,48 @@
 {
-    "name": "mugoweb/mugo_varnish",
-    "description": "This extension integrates eZ Publish operations with Varnish; for example, it will purge the relevant Varnish caches when content is edited in eZ Publish",
+    "name": "se7enxweb/mugo_varnish",
+    "description": "Mugo Varnish for Exponential: purges the Varnish cache of the pages a publish affects, gives administrators a page to purge by condition, and can vary the cache of signed-in users by a role hash.",
     "type": "ezpublish-legacy-extension",
-    "license": "GPL-2.0",
+    "keywords": [
+        "exponential",
+        "exponential-legacy",
+        "ezpublish-legacy",
+        "extension",
+        "varnish",
+        "cache",
+        "purge",
+        "ban",
+        "http-cache"
+    ],
+    "homepage": "https://github.com/se7enxweb/mugo_varnish",
+    "support": {
+        "issues": "https://github.com/se7enxweb/mugo_varnish/issues",
+        "source": "https://github.com/se7enxweb/mugo_varnish"
+    },
+    "license": "GPL-2.0-only",
     "authors": [
         {
-            "name": "Philipp Kamps"
+            "name": "Philipp Kamps",
+            "role": "Author"
+        },
+        {
+            "name": "Mugo Web",
+            "homepage": "https://www.mugo.ca",
+            "role": "Author"
+        },
+        {
+            "name": "7x",
+            "email": "info@se7enx.com",
+            "homepage": "https://se7enx.com",
+            "role": "Maintainer"
         }
     ],
     "require": {
-        "ezsystems/ezpublish-legacy-installer": "*"
+        "php": ">=8.0",
+        "ext-curl": "*",
+        "se7enxweb/exponential-legacy-installer": "*"
+    },
+    "extra": {
+        "ezpublish-legacy-extension-name": "mugo_varnish",
+        "installer-name": "mugo_varnish"
     }
 }
