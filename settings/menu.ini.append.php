@@ -8,6 +8,9 @@ Part[varnishnavigationpart]=varnish
 Tabs[]=varnish
 
 [Topmenu_varnish]
+# Icon - the icon the admin4 design draws before the tab's name: a name of design.ini
+#        [AdminDesignSettings] IconList[] (Bootstrap Icons); older admin designs ignore it.
+Icon=lightning
 NavigationPartIdentifier=varnishnavigationpart
 Name=Varnish
 Tooltip=Varnish Tools
